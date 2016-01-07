@@ -7,7 +7,7 @@ package actors
  import screens.GameScreen;
  /**
   * ...
-  * @author erwin henraat
+  * @author
   */
  public class Obstacle extends MovieClip
  {
@@ -20,6 +20,7 @@ package actors
    this.addEventListener(Event.ADDED_TO_STAGE, init);
   }  
   private function init(e:Event):void 
+  
   {
    removeEventListener(Event.ADDED_TO_STAGE, init);
    addChild(new ObstacleArt());

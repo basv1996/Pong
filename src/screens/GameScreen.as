@@ -22,12 +22,13 @@
 	{
 		private var balls:Array = [];
 		private var paddles:Array = [];
-		private var obstacle:Array=  [];
+		private var obstacles:Array=  [];
 		private var scoreboard:Scoreboard;
 		static public const GAME_OVER:String = "game over";
 		//static public const BALL_BOUNCE:String = "ballBounce";
 		static public const BALL_BOUNCE_LEFT:String = "ballBounce";
 		static public const BALL_BOUNCE_RIGHT:String = "ballBounce";
+		static private const TEN_BOUNCE:String = "10_BOUNCE";
 		public function GameScreen() 
 		{
 
@@ -64,12 +65,38 @@
 			addChild(scoreboard);
 			
 			this.addEventListener(Event.ENTER_FRAME, loop);
+			this.addEventListener(TEN_BOUNCE, createObstacle);
 		}		
 		
 		private function loop(e:Event):void 
 		{
 			checkCollision();
+			
 		}	
+		
+		function createObstacle(e:Event):void
+		{
+			//obstacle maken
+			
+			trace("new obstacle");
+			obstacles.push(new ObstacleArt);
+			obstacles[obstacles.length - 1].x = stage.stageWidth * Math.random();
+			obstacles[obstacles.length - 1].y = stage.stageHeight * Math.random();
+			addChild(obstacles[obstacles.length-1]);
+			
+			
+		}
+		private var bounces:int = 0;
+		private function checkBounces():void 
+		{
+			bounces++;
+			if (bounces > 1) 
+			{
+				dispatchEvent(new Event(TEN_BOUNCE));
+				bounces = 0;
+			
+			}
+		}
 		private function checkCollision():void 
 		{
 			for (var i:int = 0; i < balls.length; i++) 
@@ -80,12 +107,14 @@
 					{
 						dispatchEvent(new Event(BALL_BOUNCE_LEFT));
 						trace(" ball links bounce werkt")
+						checkBounces();
 						
 					}
 					if (paddles[1].hitTestObject(balls[i]))
 					{
 						dispatchEvent(new Event(BALL_BOUNCE_RIGHT));
 							trace(" ball rechts bounce werkt")
+							checkBounces();
 					}
 					
 					
