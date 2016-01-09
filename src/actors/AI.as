@@ -4,7 +4,7 @@
 	
 	/**
 	 * ...
-	 * @author erwin henraat
+	 * @author Bas Vugts
 	 */
 	public class AI extends Paddle 
 	{

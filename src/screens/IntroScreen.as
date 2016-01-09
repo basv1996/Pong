@@ -58,7 +58,7 @@
 			
 			start = new TextField();
 			start.embedFonts = true;
-			start.text = "instructions";
+			start.text = "instructions:";
 			start.autoSize = TextFieldAutoSize.CENTER;
 			start.setTextFormat(subFormat)
 			

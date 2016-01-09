@@ -9,7 +9,7 @@
 	import utils.MovementCalculator;
 	/**
 	 * ...
-	 * @author erwin henraat
+	 * @author Bas Vugts
 	 */
 	public class Ball extends MovieClip 
 	{

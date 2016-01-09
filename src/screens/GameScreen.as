@@ -82,7 +82,8 @@
 			obstacles.push(new ObstacleArt);
 			obstacles[obstacles.length - 1].x = stage.stageWidth * Math.random();
 			obstacles[obstacles.length - 1].y = stage.stageHeight * Math.random();
-			addChild(obstacles[obstacles.length-1]);
+			addChild(obstacles[obstacles.length - 1]);
+		
 			
 			
 		}
@@ -153,6 +154,9 @@
 			scoreboard.player2 += 1;
 			
 			checkScore();
+			
+	
+			
 		}		
 		private function onRightOut(e:Event):void 
 		{

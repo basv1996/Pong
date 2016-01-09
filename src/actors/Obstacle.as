@@ -7,7 +7,7 @@ package actors
  import screens.GameScreen;
  /**
   * ...
-  * @author
+  * @author Bas Vugts
   */
  public class Obstacle extends MovieClip
  {
