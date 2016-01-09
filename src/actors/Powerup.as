@@ -5,7 +5,7 @@ package actors
 	import flash.events.Event;
 	/**
 	 * ...
-	 * @author erwin henraat
+	 * @author Bas Vugts
 	 */
 	public class Powerup extends MovieClip
 	{

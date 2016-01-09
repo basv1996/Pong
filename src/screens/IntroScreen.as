@@ -8,7 +8,7 @@
 	import flash.events.KeyboardEvent;
 	/**
 	 * ...
-	 * @author erwin henraat
+	 * @author Bas Vugts
 	 */
 	public class IntroScreen extends Screen 
 	{

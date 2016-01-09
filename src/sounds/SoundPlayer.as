@@ -10,7 +10,7 @@
 	import actors.Ball;
 	/**
 	 * ...
-	 * @author erwin henraat
+	 * @author Bas Vugts
 	 */
 	public class SoundPlayer 
 	{

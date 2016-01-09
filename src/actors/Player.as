@@ -5,7 +5,7 @@
 	import flash.ui.*;
 	/**
 	 * ...
-	 * @author erwin henraat
+	 * @author Bas Vugts
 	 */
 	public class Player extends Paddle 
 	{

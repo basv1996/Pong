@@ -9,7 +9,7 @@ package screens
 	import flash.events.TimerEvent;
 	/**
 	 * ...
-	 * @author erwin henraat
+	 * @author Bas Vugts
 	 */
 	public class GameOverScreen extends Screen 
 	{

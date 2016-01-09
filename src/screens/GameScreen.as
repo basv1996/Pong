@@ -16,7 +16,7 @@
 	
 	/**
 	 * ...
-	 * @author erwin henraat
+	 * @author Bas Vugts
 	 */
 	public class GameScreen extends Screen
 	{
