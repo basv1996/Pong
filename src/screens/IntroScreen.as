@@ -39,7 +39,7 @@
 			title.setTextFormat(textFormat);		
 			
 			title.x = stage.stageWidth / 2 - title.textWidth /2;
-			title.y = stage.stageHeight / 2.2 - title.textHeight /2;
+			title.y = stage.stageHeight / 3 - title.textHeight /2;
 			
 			title.mouseEnabled = false;
 			
@@ -47,12 +47,12 @@
 			
 			start = new TextField();
 			start.embedFonts = true;
-			start.text = "Click spacebar to start";
+			start.text = "First player to 10 wins";
 			start.autoSize = TextFieldAutoSize.CENTER;
 			start.setTextFormat(subFormat)
 			
 			start.x = stage.stageWidth / 2 - start.textWidth / 2;
-			start.y = stage.stageHeight / 1.6 + 20;
+			start.y = stage.stageHeight / 2.0 + 20;
 			
 			addChild(start);
 			
@@ -63,7 +63,7 @@
 			start.setTextFormat(subFormat)
 			
 			start.x = stage.stageWidth / 2 - start.textWidth / 2;
-			start.y = stage.stageHeight / 2 + 20;
+			start.y = stage.stageHeight / 2.5 + 20;
 			
 			addChild(start);
 			
@@ -74,13 +74,24 @@
 			start.setTextFormat(subFormat)
 			
 			start.x = stage.stageWidth / 2 - start.textWidth / 2;
-			start.y = stage.stageHeight / 1.8 + 20;
+			start.y = stage.stageHeight / 2.25 + 20;
 			
 			addChild(start);
 			
 			start = new TextField();
 			start.embedFonts = true;
-			start.text = "Bad decision to start this game, good luck";
+			start.text = "The obstacles will not be romoved to increase the difficulty";
+			start.autoSize = TextFieldAutoSize.CENTER;
+			start.setTextFormat(subFormat)
+			
+			start.x = stage.stageWidth / 2 - start.textWidth / 2;
+			start.y = stage.stageHeight / 1.65 + 20;
+			
+			addChild(start);
+			
+			start = new TextField();
+			start.embedFonts = true;
+			start.text = "Click SpaceBar to start The Game";
 			start.autoSize = TextFieldAutoSize.CENTER;
 			start.setTextFormat(subFormat)
 			
@@ -88,6 +99,8 @@
 			start.y = stage.stageHeight / 1.4 + 20;
 			
 			addChild(start);
+			
+			
 			
 			start.addEventListener(Event.ENTER_FRAME, loop);
 			

@@ -91,7 +91,7 @@
 		private function checkBounces():void 
 		{
 			bounces++;
-			if (bounces > 1) 
+			if (bounces > 6) 
 			{
 				dispatchEvent(new Event(TEN_BOUNCE));
 				bounces = 0;
